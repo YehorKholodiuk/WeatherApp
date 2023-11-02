@@ -23,8 +23,8 @@ function App() {
         const currentUnit = button.innerText.slice(1);
         //console.log(currentUnit)
         const isCelsius = currentUnit === 'C'
-        button.innerText = isCelsius ? ' °F':' °C';
-        setUnits(isCelsius? 'Metric':'Imperial')
+        button.innerText = isCelsius ? '°F':'°C';
+        setUnits(isCelsius? 'metric':'imperial')
     }
 
     const enterKeyPressed = (e) => {
@@ -63,7 +63,7 @@ function App() {
                             </div>
                             <div className="temperature">
 
-                                <h1> {`${weather.temp.toFixed()}   ${units === 'metric'? '°C':'°F'}`}</h1>
+                                <h1> {`${weather.temp.toFixed()}   ${units === 'imperial'? '°F':'°C'}`}</h1>
 
                             </div>
 

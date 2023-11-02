@@ -1,10 +1,10 @@
 import React from 'react';
 import './descriptionWidgets.css'
-import {FaArrowDown} from 'react-icons/fa'
+//import {FaArrowDown} from 'react-icons/fa'
 
 const DescriptionWidgets = ({weather,units}) => {
     const tempUnit = units === 'metric'? 'C':'F'
-    const windUnit = units === 'metric' ? 'm/s':'m/h'
+    const windUnit = units === 'metric' ? 'm/s':'mile/h'
     const pressureUnit = units === 'metric' ?'inHg':'m/b'
 
     const cards = [
